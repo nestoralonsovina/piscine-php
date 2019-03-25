@@ -1,0 +1,77 @@
+:root {
+    --color: #525659;
+}
+
+body { 
+    background-color: var(--color);
+    width: 80%;
+    margin: auto;
+}
+
+.wrapper {
+    --color: #909090;
+    margin: auto;
+}
+
+.general {
+    background-color: var(--color);
+    box-shadow: 8px 11px 8px black;
+    border-radius: 10px;
+}
+
+.head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.right-head {
+    display: flex;
+}
+
+.buttons {
+    --padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#reload {
+    padding-right: var(--padding);
+    padding-top: var(--padding);
+}
+
+#close {
+    padding-right: var(--padding);
+    padding-bottom: var(--padding);
+}
+
+.buttons > a > img {
+    width: 20px;
+}
+
+#day {
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-center > img {
+    border-radius: 10px;
+}
+
+.sidebar {
+    width: 10%;
+    margin: 40px;
+}
+
+.sidebar > a > img {
+    width: 100%;
+    height: 20%;
+}
