@@ -10,12 +10,43 @@
         body {
             background-color: pink;
         }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .amazon > img {
+            width: 100%;
+        }
+
+        .aliexpress > img {
+            width: 100%;
+        }
+        
+        .footer {
+            text-align: right;
+        }
+        
     </style>
 </head>
 
 
 <body>
-    <h1>Hello php piscine &rarr; day00</h1>
+    <h1>php piscine &rarr; day00</h1>
+    <div class="wrapper">
+
+        <div class="column amazon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Amazon_logo_plain.svg/1206px-Amazon_logo_plain.svg.png" alt="amazon logo" />
+            <a href="https://www.amazon.com/">Amazon</a>
+        </div>
+        <div class="column aliexpress">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Aliexpress_logo.svg/1280px-Aliexpress_logo.svg.png" alt="aliexpress" />
+            <a href="https://www.aliexpress.com/">AliExpress</a>
+        </div>
+
+    </div>
+    <hr>
+    <p class="footer"><code><i>&copy; nalonso 2019</i></code></p>
 
 </body>
 </html>
