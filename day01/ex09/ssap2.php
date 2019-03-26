@@ -3,9 +3,45 @@
 
 function ft_split($s1)
 {
-	$tab = explode(" ", $s1);
-	sort($tab);
-	return($tab);
+    $tab = explode(" ", $s1);
+    sort($tab);
+    return($tab);
+}
+
+function cool_cmp($a, $b)
+{
+	for ($i = 0; ($i < strlen($a) && $i < strlen($b)); $i++)
+	{
+		$c1 = $a[$i];
+		$c2 = $b[$i];
+		if ($c1 == $c2)
+			continue ;
+		if (ctype_alpha($c1))
+		{
+			if (ctype_alpha($c2))
+			{
+				if (strcmp(strtolower($c1), strtolower($c2)) == 0)
+					continue ;
+				return (strcmp(strtolower($c1), strtolower($c2)));
+			}
+			return (-1);
+		}
+		else if (is_numeric($c1))
+		{
+			if (ctype_alpha($c2))
+				return (1);
+			else if (is_numeric($c2))
+				return (strcmp($c1, $c2));
+			return (-1);
+		}
+		else
+		{
+			if (!ctype_alpha($c2) && !is_numeric($c2))
+				return (strcmp($c1, $c2));
+			return (1);
+		}
+	}
+	return (strlen($a) - strlen($b));
 }
 
 if ($argc == 1)
@@ -13,42 +49,15 @@ if ($argc == 1)
 
 $final = [];
 foreach ($argv as $arg) {
-   if ($arg == $argv[0])
-       continue;
-   $tmp = ft_split($arg);
-   $final = array_merge($final, $tmp);
+    if ($arg == $argv[0])
+        continue;
+    $tmp = ft_split($arg);
+    $final = array_merge($final, $tmp);
 }
 $argv = $final;
 
-$numeric = [];
+usort($argv, cool_cmp); 
 
-foreach ($argv as $element) {
-    if (is_numeric($element))
-        $numeric[] = $element;
-}
-
-sort($numeric, SORT_STRING);
-
-$string = [];
-
-foreach ($argv as $element) {
-    if (ctype_alpha($element))
-        $string[] = $element;
-}
-
-sort($string, SORT_NATURAL | SORT_FLAG_CASE);
-
-$strange = [];
-
-foreach ($argv as $element) {
-    if (is_numeric($element) == FALSE && ctype_alpha($element) == FALSE)
-        $strange[] = $element;
-}
-
-sort($strange);
-
-$print = array_merge($string, $numeric, $strange);
-foreach ($print as $e)
+foreach ($argv as $e)
     echo $e . "\n";
-
 ?>
