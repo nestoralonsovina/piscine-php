@@ -1,51 +1,60 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="author" content="nalonso">
+        <title>The HTML5 Herald</title>
+        <meta name="author" content="nalonso">
 
-  <link rel="stylesheet" href="doft.css">
+        <link rel="stylesheet" href="doft.css">
 
-</head>
+    </head>
 
-<body>
-    <div class="wrapper">
+    <body>
+        <div class="wrapper">
+            <header class="top shadow radius">
+                <img class="logo" src="resources/day_of_the_42.png" alt="forty-two logo">
+                <img class="loupe" src="resources/loupe.png" alt="loupe">
+                <a class="reload" href="https//www.disney.com"><img src="resources/reload.png" alt="Start from the beginning"></a>
+                <a class="close" href="https//www.relaischateux.com"><img src="resources/close.gif" alt="Disconnect" /></a>
+            </header>
 
-        <div class="general head">
-            <img id="day" src="resources/day_of_the_42.png" />
-            <div class="right-head">
-                <img id="loupe" src="resources/loupe.png" />
-                <div class="buttons">
-                    <a id="reload" href="https://www.disney.com"><img src="resources/reload.png" alt="Start from the beginning"/></a>
-                    <a id="close" href="https://www.relaischateaux.com"><img src="resources/close.gif" alt="Disconnect"/></a>
+            <div class="center">
+                <div class="sidebar left radius shadow">
+                    <img src="resources/arrow.png" alt="Advance">
+                    <img src="resources/main.png" alt="Take">
+                    <img class="selected" src="resources/oeil.png" alt="Look">
+                    <img src="resources/outil.png" alt="Use">
+                    <img src="resources/chat-icon.png" alt="Speak">
                 </div>
+
+                <div class="middle shadow radius">
+                    <img src="resources/cluster.jpg" alt="cluster" usemap="#special">
+                </div>
+
+                <div class="sidebar right radius shadow">
+                    <img class="book" src="resources/book.png" alt="book">
+                    <img class="towel" src="resources/towel.png" alt="towel">
+                    <div class="bricks">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="free">
+                <p class="line-one">Vous <span class="span-big">entrez</span> alors dans une grande piece remplie d'<span class="span-shadow">ordinateurs.</span>..</p>
+                <p class="line-two">- Bonjour, vous êtes nouveau ici ?</p>
+                <form>
+                    <input type="text"/>
+                    <input id="response" type="submit" value="Repondre"/>
+                </form>
             </div>
         </div>
-
-        <div class="center">
-
-            <div class="general sidebar left">
-                <a href=""><img src="resources/arrow.png" /></a>
-                <a href=""><img src="resources/main.png" /></a>
-                <a href=""><img src="resources/oeil.png" /></a>
-                <a href=""><img src="resources/chat-icon.png" /></a>
-            </div>
-
-            <div class="general img-center">
-                <img src="resources/cluster.jpg" alt="cluster"/>
-            </div>
-
-            <div class="general sidebar right">
-                <a href=""><img src="resources/book.png" /></a>
-                <a href=""><img src="resources/towel.png" /></a>
-                <a href=""><img src="resources/brick.jpg" /></a>
-            </div>
-
-        </div>
-
-    </div>
-</body
+        <map name="special" id="special">
+            <area title="apple" href="http://www.apple.com" shape="rect" coords="803,446,1006,325" />
+            <area title="ikea" href="http://www.ikea.com" title="" shape="rect" coords="323,327,475,561" />
+        </map>
+    </body>
 </html>
