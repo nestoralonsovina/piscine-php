@@ -2,13 +2,9 @@
 
 function ft_is_sort($tab)
 {
-    $a = $tab;
-    $b = $tab;
+    $a = $b = array_values($tab);
     sort($b);
-    if ($a === $b)
-        return true;
-    else
-        return false;
+    return ($a === $b);
 }
 
 ?>

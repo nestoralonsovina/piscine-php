@@ -20,8 +20,8 @@ if ($argc != 2) {
 }
 else {
     $op = explode(";", "+;-;*;/;%");
-    $test = sscanf($argv[1], "%d %c %d %s");
-    if ($test[0] && $test[1] && in_array($test[1], $op) && $test[2] && !$test[3]) {
+    $test = sscanf($argv[1], "%f %c %f %s");
+    if (count($test) >= 3 && $test[1] && in_array($test[1], $op) && !$test[3]) {
         switch($test[1]) {
             case "*":
                 $result = $test[0] * $test[2];
