@@ -10,12 +10,12 @@ if (file_exists('/var/run/utmpx')) {
     }
 
     $array = array_slice($array, 1);
-    var_dump($array);
+
     foreach($array as $key => $value)
     {
-        $line = $value["a"] . "\t" . $value["c"] . "\n";
+        $line = trim($value["a"]) . "  " . trim($value["c"]) . "  " . date('M d H:i', $value["f1"]) . " ";
+        echo str_replace("\0", '', $line) . "\n";
     }
-    echo $line;
 }
     
 ?>
