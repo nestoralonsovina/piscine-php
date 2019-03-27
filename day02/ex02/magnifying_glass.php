@@ -23,7 +23,7 @@ if ($argc > 1 && file_exists($argv[1]))
     {
         $line .= fgets($fd);
     }
-    fclose ($fd);
+    fclose($fd);
 
     $anchor = "/(<a\s+)(.*?)(>)(.*)(<\/a>)/si";
     $line = preg_replace_callback($anchor,"callback", $line);

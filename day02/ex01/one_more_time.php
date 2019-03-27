@@ -31,7 +31,7 @@ $pattern .= '([0-2][0-9]):([0-5][0-9]):([0-5][0-9])';
 $pattern .= '$/';
 
 $output = array();
-if (preg_match($pattern, $argv[1], $output)) {
+if (preg_match($pattern, trim($argv[1]), $output)) {
     date_default_timezone_set("Europe/Paris");
     $m = array_search(strtolower($output[3]), $monthnames);
     if (checkdate($m, (int)$output[2], (int)$output[4])) {
