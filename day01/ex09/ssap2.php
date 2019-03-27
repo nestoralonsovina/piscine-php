@@ -20,25 +20,25 @@ function cool_cmp($a, $b)
 		{
 			if (ctype_alpha($c2))
 			{
-				if (strcmp(strtolower($c1), strtolower($c2)) == 0)
+				if (strtolower($c1) == strtolower($c2))
 					continue ;
 				return (strcmp(strtolower($c1), strtolower($c2)));
 			}
-			return (-1);
+			return (-42);
 		}
 		else if (is_numeric($c1))
 		{
 			if (ctype_alpha($c2))
-				return (1);
+				return (42);
 			else if (is_numeric($c2))
 				return (strcmp($c1, $c2));
-			return (-1);
+			return (-42);
 		}
 		else
 		{
 			if (!ctype_alpha($c2) && !is_numeric($c2))
 				return (strcmp($c1, $c2));
-			return (1);
+			return (42);
 		}
 	}
 	return (strlen($a) - strlen($b));
