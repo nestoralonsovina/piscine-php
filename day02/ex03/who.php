@@ -13,8 +13,10 @@ if (file_exists('/var/run/utmpx')) {
 
     foreach($array as $key => $value)
     {
-        $line = trim($value["a"]) . "  " . trim($value["c"]) . "  " . date('M d H:i', $value["f1"]) . " ";
-        echo str_replace("\0", '', $line) . "\n";
+        if ($value["e"] == 7) {
+            $line = trim($value["a"]) . "  " . trim($value["c"]) . "  " . date('M d H:i', $value["f1"]) . " ";
+            echo str_replace("\0", '', $line) . "\n";
+        }
     }
 }
     
