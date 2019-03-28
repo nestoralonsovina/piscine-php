@@ -36,7 +36,12 @@ while (!feof($fd)) {
 }
 fclose($fd);
 
-$name = array_combine($data[$argv[2]], $data['nom']);
+$nom = array_combine($data[$argv[2]], $data['nom']);
+$prenom = array_combine($data[$argv[2]], $data['prenom']);
+$mail = array_combine($data[$argv[2]], $data['mail']);
+$IP = array_combine($data[$argv[2]], $data['IP']);
+$pseudo = array_combine($data[$argv[2]], $data['pseudo']);
+
 while (1) {
     echo "Enter your command: ";
     $line = fgets(STDIN);
