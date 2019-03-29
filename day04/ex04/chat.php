@@ -11,7 +11,6 @@ function get_data($file) {
 }
 
 $file = '../private/chat';
-date_default_timezone_set('Europe/Paris');
 if (file_exists($file)) {
     $fd = fopen($file, "c");
     if (flock($fd, LOCK_EX)) {

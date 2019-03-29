@@ -41,8 +41,13 @@ if (isset($_SESSION['loggued_on_user']) && $_SESSION['loggued_on_user'] !== "") 
 }
 
 ?>
-<html><body>
-    <form method="post" action="speak.php">
+<html>
+
+<head>
+</head>
+<script langage="javascript">top.frames['chat'].location = 'chat.php' ;</script>
+<body>
+    <form method="post" action="">
         <input type="text" name="msg" />
         <input type="submit" name="submit" value="OK" />
     </form>
