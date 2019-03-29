@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['login']) && !isset($_SESSION['login'])) {
+if (!isset($_SESSION['login']) && !isset($_SESSION['passwd'])) {
     $_SESSION['login'] = "";
     $_SESSION['passwd'] = "";
 }
