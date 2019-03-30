@@ -13,8 +13,7 @@ function getData($file) {
 function auth($login, $passwd) {
     $data = getData('../private/passwd');
     $passwd = hash('whirlpool', $passwd);
-    $val = array_values($data);
-    foreach ($val as $user) {
+    foreach ($data as $user) {
         if ($login === $user[login] && $passwd === $user[passwd]) {
             return TRUE;
         }
