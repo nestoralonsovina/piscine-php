@@ -1,0 +1,1 @@
+select gn.id_genre, gn.name, gn.id_distrib, distrib.name, gn.title from (select idg.id_genre, genre.name, id_distrib, idg.title from (select id_genre, title, id_distrib from film where id_genre between 4 and 8) idg left outer join genre on genre.id_genre = idg.id_genre) gn left outer join distrib on distrib.id_distrib = gn.id_distrib and gn.id_distrib;
