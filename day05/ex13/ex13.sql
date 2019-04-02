@@ -1,1 +1,1 @@
-select round(nb_seats / number_cinema) as `average` from cinema;
+select round(avg(nb_seats)) as `average` from cinema;

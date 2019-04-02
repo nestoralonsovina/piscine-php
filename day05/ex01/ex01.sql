@@ -1,1 +1,1 @@
-create table ft_table (id int primary key auto_increment not null, login varchar(11) default 'toto' not null, `group` enum('staff', 'student', 'other') not null, creation_date date not null);
+CREATE TABLE ft_table (`id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, `login` VARCHAR(8) NOT NULL DEFAULT 'toto', `group` ENUM ('staff', 'student', 'other') NOT NULL, creation_date DATE NOT NULL);

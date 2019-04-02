@@ -9,5 +9,6 @@ value will be set to 1.0 by default.
 
 Another optional parameter is a color, represented by an instance of the Color Class;
 
-The class doesn't have any methods.
+The class doesn't have any methods apart from the multiples setters and getters for
+each propertie;
 ---------------------------------------------------------------------- Vertex ->
