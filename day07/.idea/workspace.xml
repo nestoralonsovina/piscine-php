@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad1ba9e0-fb1b-4d8d-8691-b5a8ed8d4bfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/day07.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex00/Tyrion.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01/Greyjoy.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex02/Targaryen.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex03/House.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex04/Jaime.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex04/Lannister.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex04/Tyrion.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex05/IFighter.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex05/NightsWatch.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex06/Fighter.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex06/UnholyFactory.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex01/Vertex.doc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../day06/ex01/Vertex.doc.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex02/Color.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex02/Vector.doc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../day06/ex02/Vector.doc.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex02/Vertex.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex02/main_02.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex02/main_02.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex03/Color.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex03/Matrix.doc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../day06/ex03/Matrix.doc.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex03/Vector.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex03/Vertex.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex03/main_03.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/ex03/main_03.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day06/tuto.php" beforeDir="false" />
-    </list>
+    <list default="true" id="ad1ba9e0-fb1b-4d8d-8691-b5a8ed8d4bfe" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +11,7 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ex06/UnholyFactory.class.php">
               <provider selected="true" editor-type-id="text-editor">
@@ -63,11 +33,11 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ex06/test1.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-26">
+                <state relative-caret-position="15">
                   <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
                 </state>
               </provider>
@@ -189,23 +159,19 @@
       <option name="presentableId" value="Default" />
       <updated>1554283590959</updated>
       <workItem from="1554283592172" duration="4487000" />
+      <workItem from="1554291357378" duration="121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4487000" />
+    <option name="totallyTimeSpent" value="4608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="959" y="23" width="1601" height="1337" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.24951892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.686747" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -213,10 +179,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.686747" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,9 +263,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ex04/Lannnister.class.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ex04/Lannnister.class.php" />
     <entry file="file://$PROJECT_DIR$/ex04/Lannister.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -344,23 +313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ex06/test2.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ex06/test1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ex06/Fighter.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ex05/test1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -374,6 +326,23 @@
           <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex06/Fighter.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex06/test1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex06/test2.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloon</title>
+	<script>
+		window.onload = () => {
+			const ballon = document.getElementById('ballon');
+			ballon.addEventListener('click', () => {
+				let w = parseInt(ballon.style.width) + 10;
+				let h = parseInt(ballon.style.height) + 10;
+				let color = ballon.style.backgroundColor;
+				if (w < 420) {
+					ballon.style.width = w + "px";
+					ballon.style.height = h + "px";
+				} else {
+					ballon.style.width = "200px";
+					ballon.style.height = "200px";
+				}
+
+				if (color == "red") {
+					ballon.style.backgroundColor = "green";
+				} else if (color == "green") {
+					ballon.style.backgroundColor = "blue";
+				} else if (color == "blue") {
+					ballon.style.backgroundColor = "red";
+				}
+			});
+
+			ballon.addEventListener('mouseleave', () => {
+				let w = parseInt(ballon.style.width) - 5;
+				let h = parseInt(ballon.style.height) - 5;
+				let color = ballon.style.backgroundColor;
+				if (w >= 200) {
+					ballon.style.width = w + "px";
+					ballon.style.height = h + "px";
+				}
+
+
+				if (color == "red") {
+					ballon.style.backgroundColor = "blue";
+				} else if (color == "green") {
+					ballon.style.backgroundColor = "red";
+				} else if (color == "blue") {
+					ballon.style.backgroundColor = "green";
+				}
+			})
+		}
+	</script>
+</head>
+<body>
+	<div style="width: 200px; height: 200px; background-color: red; border-radius: 100%;" id="ballon">
+
+	</div>
+</body>
+</html>

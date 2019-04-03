@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloon</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+
+		window.onload = () => {
+			const ballon = $( "#ballon" );
+
+			ballon.click(() => {
+				let w = parseInt(ballon.width()) + 10;
+				let h = parseInt(ballon.height()) + 10;
+				let color = ballon.css('background-color');
+				if (w < 420) {
+					ballon.width(w);
+					ballon.height(h);
+				} else {
+					ballon.width(200);
+					ballon.height(200);
+				}
+
+				if (color == "rgb(255, 0, 0)") {
+					ballon.css('background-color', 'rgb(0, 255, 0)');
+				} else if (color == "rgb(0, 255, 0)") {
+					ballon.css('background-color', 'rgb(0, 0, 255)');
+				} else if (color == "rgb(0, 0, 255)") {
+					ballon.css('background-color', 'rgb(255, 0, 0)');
+				}
+			})
+
+
+			ballon.mouseleave(() => {
+				let h = parseInt(ballon.height()) - 5;
+				let w = parseInt(ballon.width()) - 5;
+				let color = ballon.css('background-color');
+				if (w >= 200) {
+					ballon.width(w);
+					ballon.height(h);
+				}
+
+				if (color == "rgb(255, 0, 0)") {
+					ballon.css('background-color', 'rgb(0, 0, 255)');
+				} else if (color == "rgb(0, 255, 0)") {
+					ballon.css('background-color', 'rgb(255, 0, 0)');
+				} else if (color == "rgb(0, 0, 255)") {
+					ballon.css('background-color', 'rgb(0, 255, 0)');
+				}
+			})
+		}
+
+	</script>
+</head>
+<body>
+	<div style="width: 200px; height: 200px; background-color: red; border-radius: 100%;" id="ballon">
+
+	</div>
+</body>
+</html>
