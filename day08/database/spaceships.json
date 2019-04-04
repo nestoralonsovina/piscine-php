@@ -1,0 +1,62 @@
+{
+	"1": {
+		"name": "Honorable Duty",
+		"width": 1,
+		"height": 4,
+		"hp": 5,
+		"pp": 10,
+		"speed": 15,
+		"handling": 4,
+		"shield": 0,
+		"weapons": "Side laser batteries",
+		"sprite": "assets/ship1.png"
+	},
+	"2": {
+		"name": "Sword Of Absolution",
+		"width": 1,
+		"height": 3,
+		"hp": 4,
+		"pp": 10,
+		"speed": 18,
+		"handling": 3,
+		"shield": 0,
+		"weapons": "Side laser batteries",
+		"sprite": "assets/ship2.png"
+	},
+	"3": {
+		"name": "Hand of The Emperor",
+		"width": 1,
+		"height": 4,
+		"hp": 5,
+		"pp": 10,
+		"speed": 15,
+		"handling": 4,
+		"shield": 0,
+		"weapons": "Nautical Lance",
+		"sprite": "assets/ship3.jpg"
+	},
+	"4": {
+		"name": "Imperator Deus",
+		"width": 2,
+		"height": 7,
+		"hp": 8,
+		"pp": 12,
+		"speed": 10,
+		"handling": 5,
+		"shield": 2,
+		"weapons": "Side laser batteries",
+		"sprite": "assets/ship4.jpg"
+	},
+	"5": {
+		"name": "Ork'N'Roll",
+		"width": 1,
+		"height": 5,
+		"hp": 6,
+		"pp": 10,
+		"speed": 12,
+		"handling": 4,
+		"shield": 0,
+		"weapons": "Close range super heavy automatic weapon",
+		"sprite": "assets/ship5.png"
+	}
+}

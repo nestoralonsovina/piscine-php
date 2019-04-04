@@ -1,0 +1,20 @@
+{
+	"1": {
+		"name": "Side laser batteries",
+		"charges": 0,
+		"range": 10,
+		"effect": 1
+	},
+	"2": {
+		"name": "Nautical lance",
+		"charges": 0,
+		"range": 30,
+		"effect": 2
+	},
+	"3": {
+		"name": "Close range super heavy automatic weapon",
+		"charges": 5,
+		"range": 3,
+		"effect": 3
+	}
+}
