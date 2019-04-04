@@ -1,11 +1,16 @@
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-	if (file_get_contents('list.csv') !== "") {
-		$fd = fopen('list.csv', "a");
-		fputcsv($fd, $_POST['element']);
-		fclose($fd);
-		echo "success";
-	}
-	echo "failure";
+if ($_SERVER['REQUEST_METHOD'] == "GET") {
+    if (file_exists('list.csv') && isset($_GET['todo']) && !empty($_GET['todo'])) {
+        $array = array();
+        $max = 0;
+        $file = file("list.csv", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        foreach ($file as $line) {
+            $tmp = explode(";", $line);
+            if ($tmp[0] >= $max)
+                $max = $tmp[0] + 1;
+        }
+        file_put_contents("list.csv", $max.";".$_GET["todo"].PHP_EOL, FILE_APPEND);
+
+    }
 }
