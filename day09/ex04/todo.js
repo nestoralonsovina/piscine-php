@@ -26,7 +26,7 @@ function add_element(card) {
     $.ajax({
         url: 'insert.php?todo=' + card,
         method: "GET",
-        data: null
+        data: null,
     }).done((data) => loadData());
 }
 

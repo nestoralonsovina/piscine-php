@@ -6,7 +6,7 @@
 
 	<script>
 
-		window.onload = () => {
+		$(window).on('load', () => {
 			const ballon = $( "#ballon" );
 
 			ballon.click(() => {
@@ -48,7 +48,7 @@
 					ballon.css('background-color', 'rgb(0, 255, 0)');
 				}
 			})
-		}
+		});
 
 	</script>
 </head>

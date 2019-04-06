@@ -4,11 +4,20 @@ include 'classes/Game.class.php';
 
 session_start();
 
+if (isset($_SESSION['game'])) {
+    $Game = $_SESSION['game'];
+} else {
+    $Game = new Game();
 
-$game = new Game();
+    $p1 = new Player("Player1");
+    $p2 = new Player("Player2");
+    $p1->addShip( new Ship(1));
+    $p2->addShip( new Ship(1));
 
-$p1 = new Player("p1");
-$p1->addShip( new Ship(1));
+    $Game->setPlayer($p1);
+    $Game->setPlayer($p2);
+}
+
 ?>
 
 

@@ -4,11 +4,63 @@
 	<title>Calculator</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="todo.js"></script>
+	<style>
+		body, html {
+			width: 100%;
+			height: 100%;
+			font-family: 'Courier New', Courier, monospace;
+
+		}
+
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.wrapper {
+			border: 1px solid black;
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			min-width: 300px;
+		}
+
+		#ft_list div {
+			text-align: center;
+			padding: 8px 10px;
+			border: 1px solid green;
+			margin: 10px 0;
+			font-weight: 500;
+		}
+
+		#ft_list div:hover {
+			cursor:	pointer;
+		}
+
+		#new {
+			margin: 10px;
+			padding: 10px;
+			border-radius: 0;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: white;
+			font-size: 15px;
+			letter-spacing: 3px;
+		}
+
+	</style>
 </head>
 <body>
-	<div id="ft_list">
+	<div class="wrapper">
+		<div id="ft_list">
 
+			</div>
+		<button id="new" type="submit" name="New">New</button>
 	</div>
-	<button id="new" type="submit" name="New">New</button>
+
 </body>
 </html>

@@ -13,12 +13,11 @@ class Ship
 
         if ($id !== null) {
             $this->_info = $this->getJson($id);
-            var_dump($this->_info);
             if ($this->_info === null) {
-                //header('Location: error.php');
+                header('Location: error.php');
             }
         }
     }
 
-    public function getInformation() { return $this->_info; }
+    public function getInformation() {return $this->_info; }
 }

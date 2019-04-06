@@ -28,7 +28,7 @@
 			console.log(result);
 		}
 
-		window.onload = () => {
+		$(window).on('load', () => {
 			window.setTimeout(function message() {
 				alert("Please, use me...");
 				setTimeout(message, 30000);
@@ -82,7 +82,7 @@
 					}
 				}
 			});
-		}
+		});
 	</script>
 </head>
 <body>
